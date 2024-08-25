@@ -1,0 +1,13 @@
+https://github.com/BtbN/FFmpeg-Builds/releases
+Download ffmpeg-master-latest-win64-gpl-shared.zip 
+
+Command in terminal (This is necessary in order for the video to synchronize with the slider switch)
+ ffmpeg -i background-60.mp4 -vf scale=1920:-1 -movflags faststart -vcodec libx264 -crf 20 -g 1 -pix_fmt yuv420p background.mp4
+
+FFmpeg — набор свободных библиотек с открытым исходным кодом, которые позволяют записывать, конвертировать и передавать цифровые аудио- и видеозаписи в различных форматах.
+
+----------------------------------------------------------
+
+GSAP (The GreenSock Animation Platform) — это набор инструментов для реализации анимации любого уровня сложности с помощью JavaScript.
+
+https://habr.com/ru/companies/timeweb/articles/590501/
