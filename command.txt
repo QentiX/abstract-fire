@@ -1,13 +1,21 @@
-https://github.com/BtbN/FFmpeg-Builds/releases
-Download ffmpeg-master-latest-win64-gpl-shared.zip 
+EN - FFmpeg is a set of free and open source libraries that allow you to record, convert and transfer digital audio and video recordings in various formats.
+RU - FFmpeg — набор свободных библиотек с открытым исходным кодом, которые позволяют записывать, конвертировать и передавать цифровые аудио- и видеозаписи в различных форматах.
 
-Command in terminal (This is necessary in order for the video to synchronize with the slider switch)
- ffmpeg -i background-60.mp4 -vf scale=1920:-1 -movflags faststart -vcodec libx264 -crf 20 -g 1 -pix_fmt yuv420p background.mp4
+1. Follow the link (https://github.com/BtbN/FFmpeg-Builds/releases) and download the archive with the word shared (ffmpeg-master-latest-win64-gpl-shared.zip)
 
-FFmpeg — набор свободных библиотек с открытым исходным кодом, которые позволяют записывать, конвертировать и передавать цифровые аудио- и видеозаписи в различных форматах.
+2. We unpack this archive in a folder convenient for you
+
+3. Go to settings -> change system environment variables -> environment variables -> in system variables, click twice on PATH -> create a new variable (necessarily with the bin directory. For example, C:\..\ffmpeg\bin -> click OK and exit
+
+4. In the terminal, go to the directory with our video file and enter the command (ffmpeg -i background-60.mp4 -vf scale=1920:-1 -movflags faststart -vcodec libx264 -crf 20 -g 1 -pix_fmt yuv420p background.mp4).
+!!!It is important to specify the name of the source video correctly (For example, as in the command above 'background-60.mp4')!!! 
+This is necessary in order for the video to synchronize with the slider switch.
+
+5. We use this video for animation
 
 ----------------------------------------------------------
 
-GSAP (The GreenSock Animation Platform) — это набор инструментов для реализации анимации любого уровня сложности с помощью JavaScript.
+EN - GSAP (The GreenSock Animation Platform) is a set of tools for implementing animations of any complexity using JavaScript.
+RU - GSAP (The GreenSock Animation Platform) — это набор инструментов для реализации анимации любого уровня сложности с помощью JavaScript.
 
 https://habr.com/ru/companies/timeweb/articles/590501/
